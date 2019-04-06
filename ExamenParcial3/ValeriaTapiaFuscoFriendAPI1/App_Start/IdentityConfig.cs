@@ -3,9 +3,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using ValeriaTapiaFuscoFriendAPI.Models;
+using ValeriaTapiaFuscoFriendAPI1.Models;
 
-namespace ValeriaTapiaFuscoFriendAPI
+namespace ValeriaTapiaFuscoFriendAPI1
 {
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
 
@@ -28,8 +28,8 @@ namespace ValeriaTapiaFuscoFriendAPI
             // Configure validation logic for passwords
             manager.PasswordValidator = new PasswordValidator
             {
-                RequiredLength = 4,
-                RequireNonLetterOrDigit = false,
+                RequiredLength = 6,
+                RequireNonLetterOrDigit = true,
                 RequireDigit = true,
                 RequireLowercase = true,
                 RequireUppercase = true,
